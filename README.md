@@ -25,11 +25,11 @@ Data preparation included checks for duplicates and missing values (none found) 
 
 - **The decline was platform-wide.** All five features fell by nearly the same amount, and feature complexity explained none of the difference (82.6% vs. 82.2%).
 
-![Returning share was lower in months 7–12 for every feature](images/returning_share_early_vs_late.png)
+![Returning share was lower in months 7–12 for every feature](returning_share_early_vs_late.png)
 
 - **Ratings would have missed it.** Average ratings held at about 3.9–4.0 and drifted slightly up while returning share fell. The two were uncorrelated (r = −0.092, p = 0.485).
 
-![Returning share versus average rating](images/rating_vs_returning_share.png)
+![Returning share versus average rating](rating_vs_returning_share.png)
 
 - **The decline wasn't users leaving.** Returning users actually grew from 235 to 252. New users grew from 30 to 81, so the share fell because its denominator grew faster. Usage per active user also rose, from 1.45 to 2.38.
 
