@@ -33,6 +33,19 @@ Data preparation included checks for duplicates and missing values (none found) 
 
 - **The decline wasn't users leaving.** Returning users actually grew from 235 to 252. New users grew from 30 to 81, so the share fell because its denominator grew faster. Usage per active user also rose, from 1.45 to 2.38.
 
+## Interactive Research Dashboard
+
+To complement the Python analysis in this repository, I developed a separate interactive research dashboard that translates the findings into an exploratory experience.
+
+The dashboard illustrates how declining returning-user share can coexist with increasing returning-user counts, highlighting the importance of metric decomposition, statistical validation, and careful interpretation of AI engagement data.
+
+**[Explore the Live Interactive Dashboard](https://hannakhalil60.github.io/ai-engagement-research-dashboard/)**
+
+**[View the Dashboard's GitHub Repository](https://github.com/hannakhalil60/ai-engagement-research-dashboard)**
+
+The dashboard includes an interactive denominator-effect simulator, research visualizations, methodological limitations, and an explanation of how the initial analytical interpretation was revised.
+
+*The simulator uses illustrative scenarios. The original course-provided datasets are not publicly distributed.*
 ## Validation and revised interpretation
 
 The initial interpretation attributed the decline to fewer users returning. To test that conclusion, an independent analysis was run in ChatGPT using the same data and questions, without access to the original findings. It decomposed the ratio into its components and showed that returning users had grown, meaning the decline reflected a change in user mix rather than a loss of users. The conclusion and recommendations were revised accordingly.
