@@ -232,7 +232,7 @@ with metric2:
 
 with metric3:
     st.metric(
-        "Avg Retention Change",
+        "Avg Returning-User Share Change",
         f"{average_change_points:.1f} pts",
         help="Change in returning share between Months 1-6 and Months 7-12, "
              "measured in percentage points"
@@ -240,7 +240,7 @@ with metric3:
 
 with metric4:
     st.metric(
-        "Best Late-Period Retention",
+        "Highest Late-Period Returning Share",
         f"{best_feature_share:.1%}",
         help=best_feature
     )
@@ -375,10 +375,10 @@ solved by individual feature teams working separately.
 """, unsafe_allow_html=True)
 
 # ------------------------------------------------------------
-# Section 3: Early vs late retention
+# Section 3: Early vs. Late Returning-User Share
 # ------------------------------------------------------------
 st.markdown(
-    '<div class="section-title">3. Early vs. Late Retention</div>',
+    '<div class="section-title">3. Early vs. Late Returning-User Share</div>',
     unsafe_allow_html=True
 )
 
@@ -435,8 +435,8 @@ st.caption(
 # Retention change table
 retention_table = pd.DataFrame({
     "Feature": early.index,
-    "Early Retention (%)": (early.values * 100).round(1),
-    "Late Retention (%)": (late.values * 100).round(1),
+    "Early Returning Share (%)": (early.values * 100).round(1),
+    "Late Returning Share (%)": (late.values * 100).round(1),
     "Change (percentage points)": ((late.values - early.values) * 100).round(1)
 })
 
@@ -464,7 +464,7 @@ out as the problem.
 # Section 4: Do ratings explain retention?
 # ------------------------------------------------------------
 st.markdown(
-    '<div class="section-title">4. Do User Ratings Explain Retention?</div>',
+    '<div class="section-title">4. Are Ratings Associated with Returning-User Share??</div>',
     unsafe_allow_html=True
 )
 
@@ -651,7 +651,7 @@ with st.expander("Methodology and Data Preparation"):
     Active Users in every row, so returning share and new-user share are
     mirror images. Only returning share is used.
 
-    **Early vs. late comparison**
+    **Early vs. Late Returning-User Share**
 
     Months 1-6 were classified as the early period and Months 7-12
     as the late period. A paired t-test on these two periods returned
