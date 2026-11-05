@@ -1,4 +1,4 @@
-# AI Feature Retention Analysis
+# AI Feature Engagement & Measurement Reliability
 
 Individual project for an MBA course in programming and data analytics (ASU W. P. Carey, 2026), using a course-provided case dataset for a fictional software company, Synapse Workspace.
 
@@ -21,7 +21,7 @@ Data preparation included checks for duplicates and missing values (none found) 
 
 - **Returning share fell for every feature,** by 7.7 to 9.1 points between the first and last six months. A paired t-test confirmed the drop wasn't chance (t = 33.20, p < 0.001).
 
-![Returning share declined across all five AI features](images/returning_share_trend.png)
+![Returning share declined across all five AI features](returning_share_trend.png)
 
 - **The decline was platform-wide.** All five features fell by nearly the same amount, and feature complexity explained none of the difference (82.6% vs. 82.2%).
 
